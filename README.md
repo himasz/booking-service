@@ -8,7 +8,7 @@ and an emailing service to notify the customer of their successful booking.
 - Or Docker
 
 # Booking Service
----
+
 ##Notes
 
 ### Setup
