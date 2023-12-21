@@ -1,7 +1,5 @@
 # Booking Service
 
----
-
 **Simple Description:**
 
 Creating a booking service in Spring boot (6 APIs) with in memory repository (Database)
