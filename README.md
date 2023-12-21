@@ -5,7 +5,7 @@ and an emailing service to notify the customer of their successful booking.
 
 **Prerequisites to Run**
 
-- Run with JDK 8 (it is also compatable with 17, but it needs to be modified within maven pom)
+- Run with JDK 8 (it is also compatible with 17, but it needs to be modified within maven pom)
 - Or Docker
 
 # Booking Service
