@@ -15,6 +15,7 @@ and an emailing service to notify the customer of their successful booking.
 ### Before Setup
 
 - Setup your emailing properties in application.yaml to be able to send an email
+---
 
 ### Setup
 
