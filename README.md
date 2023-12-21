@@ -23,7 +23,7 @@ and an emailing service to notify the customer of their successful booking.
 - `cd` to the project directory
 - build maven project and run tests `mvn clean install` to build the project
 - Then start your app which will run on port `9090` with command `mvn spring-boot:run` or just run `App.java`
-
+---
 - #### With Docker
 - `cd` to the project directory
 - build maven project and run tests `mvn clean install` to build the project, run tests and package the .jar
