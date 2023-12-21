@@ -1,6 +1,6 @@
 **Simple Description**
 
-Creating a booking service in Spring boot (6 APIs) with in memory repository
+Creating a booking service in Spring boot (6 APIs) with in memory repository (Database)
 and an emailing service to notify the customer of their successful booking.
 
 **Prerequisites to Run**
