@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "ed05463d-4b24-45c2-9f17-9b0e1e07f0f3",
+		"name": "Booking-service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22851235"
+	},
+	"item": [
+		{
+			"name": "PutBooking",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"description\": \"description1\",\n    \"price\": 135.0,\n    \"currency\": \"EUR\",\n    \"email\": \"himaszidan@gmail.com\",\n    \"department\": \"department1\",\n    \"subscription_start_date\": 1702314204673\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/bookingservice/v1/bookings/123",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"bookingservice",
+						"v1",
+						"bookings",
+						"123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetBooking",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/bookingservice/v1/bookings/123",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"bookingservice",
+						"v1",
+						"bookings",
+						"123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetDepartmentBooking",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/bookingservice/v1/bookings/department/department1",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"bookingservice",
+						"v1",
+						"bookings",
+						"department",
+						"department1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetBookingCurrencies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/bookingservice/v1/bookings/currencies",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"bookingservice",
+						"v1",
+						"bookings",
+						"currencies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCurrencySum",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/bookingservice/v1/sum/EUR",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"bookingservice",
+						"v1",
+						"sum",
+						"EUR"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DoBusiness",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/bookingservice/v1/bookings/dobusiness/123",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"bookingservice",
+						"v1",
+						"bookings",
+						"dobusiness",
+						"123"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
