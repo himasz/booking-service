@@ -1,4 +1,5 @@
 **Simple Description**
+
 Creating a booking service in Spring boot (6 APIs) with in memory repository
 and an emailing service to notify the customer of their successful booking.
 
