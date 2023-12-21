@@ -1,3 +1,7 @@
+**Simple Description**
+Creating a booking service in Spring boot (6 APIs) with in memory repository
+and an emailing service to notify the customer of their successful booking.
+
 **Prerequisites to Run**
 
 - Run with JDK 8 (it is also compatable with 17 but it need to be modified within maven pom)
@@ -8,6 +12,7 @@
 ##Notes
 
 ### Setup
+
 - #### With Maven
 - Open the terminal
 - `cd` to the project directory
@@ -16,9 +21,9 @@
 
 - #### With Docker
 - `cd` to the project directory
-- build maven project and run tests `mvn clean install` to build the project, run tests  and package the .jar
+- build maven project and run tests `mvn clean install` to build the project, run tests and package the .jar
 - build docker image locally `docker build -t bookingservice .`
-- run docker image 
+- run docker image
 - now can access the API
 
 ### Swagger
