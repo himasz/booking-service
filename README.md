@@ -12,10 +12,11 @@ and an emailing service to notify the customer of their successful booking.
 
 ##Notes
 
-### Setup
+#### Before running
 
-- #### Before running
 - Setup your emailing properties in application.yaml to be able to send an email
+
+### Setup
 
 - #### With Maven
 - Open the terminal
