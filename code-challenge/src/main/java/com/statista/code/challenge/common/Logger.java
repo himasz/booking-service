@@ -1,4 +1,4 @@
-package com.statista.code.challenge.common.log;
+package com.statista.code.challenge.common;
 
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;

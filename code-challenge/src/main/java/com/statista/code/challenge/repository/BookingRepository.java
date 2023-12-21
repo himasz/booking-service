@@ -9,7 +9,7 @@ import java.util.*;
 
 @Component
 public class BookingRepository {
-    public static final String SPLITOR = ":";
+    public static final String SPLIT = ":";
     private final Map<String, BookingDTO> repository = new HashMap<>();
 
     private final Map<String, Set<String>> departments = new HashMap<>();
@@ -19,7 +19,7 @@ public class BookingRepository {
     public void addOrUpdateBooking(String bookingId, BookingDTO bookingDTO) {
         repository.put(bookingId, bookingDTO);
         addToCache(departments, bookingDTO.getDepartment(), bookingId);
-        addToCache(currencies, bookingDTO.getCurrency().name(), bookingId + SPLITOR + bookingDTO.getPrice());
+        addToCache(currencies, bookingDTO.getCurrency().name(), bookingId + SPLIT + bookingDTO.getPrice());
     }
 
     public BookingDTO getBooking(String bookingId) {
@@ -30,7 +30,7 @@ public class BookingRepository {
         return Optional.ofNullable(currencies.get(currency.name()))
                 .orElseThrow(() -> new MissingDataException("No prices found for currency: " + currency.name()))
                 .stream()
-                .map(idCurrency -> Double.valueOf(idCurrency.split(SPLITOR)[1]))
+                .map(idCurrency -> Double.valueOf(idCurrency.split(SPLIT)[1]))
                 .mapToDouble(Double::doubleValue)
                 .sum();
     }
